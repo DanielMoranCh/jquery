@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery-funciones.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/JavaScript.js"></script>
+    <title>Nota de Estudiantes</title>
+  </head>
+  <body>
+    <div id="contenido">
+      <!--ENCABEZADO-->
+      <header>
+        <div>
+          <h1>Nota de Estudiantes</h1>
+        </div>
+        <div id="menu">
+          <nav>
+            <a href="#" id="btn_mayor">Mayor Nota</a>
+            <a href="#" id="btn_menor">Menor Nota</a>
+            <a href="#" id="btn_promedio">Promedio</a>
+          </nav>
+        </div>
+      </header>
+      <!--Fin del Encabezado-->
+      <!--CUERPO DE LA PAGINA-->
+      <section id="tabla_sec">
+        <h3>Listado de estudiantes</h3>
+        <p id="tabla"></p>
+        <br>
+      </section>
+
+      <section id="registro">
+        <form id="formRegistro">
+          <fieldset>
+            <legend>
+              <h3>Registro de estudiantes</h3>
+            </legend>
+            <p>Codigo del estudiante
+              <label for="codigo"></label><br>
+              <input type="text" id="codigo" name="codigo" maxlength="5" min="1"required>
+            </p>
+            <p>
+              Nombre del estudiante
+              <label for="nombre"></label><br>
+              <input type="text" id="nombre" maxlength="30" name="nombre" required minlength="5">
+            </p>
+            <p>
+              Nota del estudiante
+              <label for="nota"></label><br>
+              <input type="text" id="nota" maxlength="2" name="nota" min="1" required>
+            </p>
+            <p>
+              <input type="submit" id="boton1" value="Registrar">
+          </p>
+          </fieldset>
+        </form>
+      </section>
+      <!--Fin del cuerpo de la pagina-->
+
+      <!--PIE DE PAGINA-->
+      <footer>
+        <div class="footer">
+          <div>
+           <h4>Contacto</h4>
+           <ul>
+             <li>Email: <a href="mailto:eldj@oyhomware.com.uy">eldj@oyhomware.com.uy</a></li>
+             <li>Calle Avenida Anastasia 2030 esq. Avenida Perterson</li>
+             <li>Telefono: 23234545</li>
+           </ul>
+         </div>
+
+         <div>
+           <h4>Términos</h4>
+           <a href="#" onclick="return confirm('Este sitio se encuentra en mantenimiento')">Nuestros Terminos y Condiciones de uso</a>
+         </div>
+
+         <div>
+           <h4>Nuestras Redes Sociales</h4>
+           <ul>
+             <li><a href="https://www.facebook.com/DjOyhom">Facebook</a></li>
+             <li><a href="tg:\/\/resolve?domain=El_DJ">Telegram</a></li>
+           </ul>
+          </div>
+
+          <div>
+           <h4>Derechos</h4>
+           <p>Derechos reservados - Copyright 2017</p>
+          </div>
+         </div>
+        </footer>
+        <!--Fin del pie de pagina-->
+      </div>
+
+
+  </body>
+</html>
