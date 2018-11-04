@@ -1,0 +1,218 @@
+body {
+	background-color: black;
+	font-family: 'Dancing Script';
+}
+#contenido {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #82c3a6;
+	alignment-adjust: central;
+	margin: auto;
+	border-radius: 10px;
+  animation: rebote 1s;
+}
+
+@media all and (min-width:900px) {
+#contenido {
+	width: 900px
+}
+}
+/*inicio header*/
+
+header {
+	background-color: #5b7989;
+	width: 100%;
+	padding: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	alignment-items: center;
+}
+
+header div h1 {
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	text-align: center;
+}
+header div nav {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#menu {
+	width: 100%;
+}
+
+@media all and (min-width:900px) {
+header div h1 {
+	text-align: left;
+}
+#menu {
+	width: 50%;
+}
+}
+header div nav a {
+	color: white;
+	text-align: center;
+	padding: 30px;
+	flex-grow: 1;
+}
+.activo {
+	text-decoration: none;
+}
+
+/*inicio contenido*/
+
+table {
+	box-shadow: 2px 2px #02010a;
+}
+#tabla_sec {
+	width: 100%;
+	background: #82c3a6;
+}
+#tabla_sec table {
+	width: 80%;
+	padding: 10px;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+
+#tabla_sec table tr td, th {
+	border-bottom: 1px black solid;
+}
+
+#registro {
+	display:  inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #d5c75f;
+	border: 1px;
+	width: 100%;
+}
+h3 {
+	text-align: center;
+	font-size: 2em;
+
+}
+
+form{
+	margin: 10px 0px 30px 0px;
+	width: 80%;
+}
+
+form fieldset{
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #333333;
+	height: 270px;
+}
+
+form fieldset legend h3{
+	font-size: 2em;
+}
+
+form fieldset p input[type=text]{
+	width: 250px;
+}
+
+form fieldset p label{
+	float: right;
+	position: relative;
+	right: 15%;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+form fieldset p input[type=submit]{
+	width: 200px;
+	height: 30px;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+  text-decoration: none;
+	border-radius: 10px;
+	background-color: #9f9f12;
+}
+
+form fieldset p input[type=submit]:hover{
+	animation: animacion 0.5s;
+}
+
+@keyframes animacion {
+	0%{
+		height: 35px;
+		width: 220px;
+		color: #555555;
+		background-color: #9f9f12;
+	}
+	50%{
+		height: 38px;
+		width: 230px;
+		color: #dddddd;
+		background-color: #7d7d0c;
+	}
+	100%{
+		height: 35px;
+		width: 200px;
+		color: #ffffff;
+		background-color: #9f9f12;
+
+	}
+
+}
+
+
+/*inicio footer*/
+
+footer {
+	clear: both;
+	width: 100%;
+	bottom: 0;
+	background: #c6d5c5;
+	padding: 20px 40px;
+	border-radius: 0 0 10px 10px;
+}
+.footer {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+footer div div {
+	flex-grow: 1;
+	flex-basis: 100%;
+	padding: 10px;
+}
+
+@media all and (min-width:900px) {
+footer div div {
+	flex-basis: 20%;
+}
+}
+footer div h4 {
+	margin: 5px 0;
+	font-size: 30px;
+}
+footer div p {
+	margin: 0;
+}
+
+/*ANIMACION DE REBOTE*/
+@-webkit-keyframes rebote{
+0%{
+  margin-top: 150%;
+}
+60%{
+  margin-top: -5%;
+}
+100%{
+  margin-top: 0%;
+}
+}
